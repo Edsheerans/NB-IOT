@@ -1,0 +1,151 @@
+*{margin: 0;padding: 0}
+/*input,img{cursor: pointer}*/
+a{text-decoration: none}
+body{background-color: #ffffff;font-family:微软雅黑;padding:20px;font-size:12px;margin:0;padding: 0}
+/*加载*/
+.index{width:100%;height: 100%; position:fixed;top: 0;left: 0;z-index: 1000;background: rgba(0,0,0,0.5)}
+.index img{position: absolute;top: 40%;left: 45%}
+
+
+.Mwidth{margin: 0 auto;width:1200px;position: relative;}
+/*顶部*/
+/*.loraTop{width:100%;min-width:1200px;height:620px;background: url(../images/topbanner.jpg) center;background-size: cover}*/
+/*顶部悬浮*/
+.loraTop .topindex{width:100%;height: 76px; background: rgba(0,0,0,.5)}
+.loraTop .topindex span{cursor: pointer;color: #ffffff;font-size: 18px;font-family: 微软雅黑;margin-right: 30px;}
+.loraTop .topindex .right span:hover{border-bottom: 2px solid #ffffff}
+.loraTop .topindex span img{height:56px;}
+.loraTop .topindex .left{float: left;display: inline-block;margin-left: 20px;line-height: 76px;}
+.loraTop .topindex .right{float: right;display: inline-block;margin-right: 20px;line-height: 76px;}
+.loraTop .topindex select{color: #ffffff;background-color: transparent;border: none;}
+/*.loraTop .topindex select:focus{outline: none}*/
+.loraTop .topindex select option{background: #787778}
+.loraTop .topindex select option:checked{color:#666666;background: #E6E6E6}
+.loraTop .topindex select option:focus{color:#666666;background: #E6E6E6}
+/*顶部文字描述*/
+.loraTop .topTreeDescription{display: inline-block;position: absolute;left: 20px;top: 236px;color: #ffffff;font-size: 48px;font-family: 宋体}
+.loraTop .topTreeDescription .sense{font-size: 36px;}
+.loraTop  .topTreeDescription p{line-height: 42px;margin-top: 10px;}
+.loraTop  .topTreeDescription .line{width: 114px;border: 2px solid #ffffff;margin: 24px 0;}
+
+/*主页面*/
+/*导航*/
+.bar .bartitle p{text-align: center;font-family: 微软雅黑 Light;font-size: 30px;color: #333333;padding-top: 44px;}
+.bar .barlist{}
+.bar .barlist ul{overflow: hidden;padding-bottom: 30px;}
+.bar .barlist ul li{float: left;list-style: none;width:25%;padding-top:20px;}
+.bar .barlist ul li p{text-align: center;font-size: 24px;color: #666666;font-family: 微软雅黑 Light;}
+
+
+/*
+
+/*
+.helps{width: 100%;}
+.tips{float: right;cursor: pointer;display: inline-block}
+.tips span{color: blue;font-size: 18px;float: left}
+.helps .safety{float: right;display: none;font-size: 13px}
+*/
+
+/*百度地图*/
+.map {height: 680px; background-color: #F5F5F5;min-width: 1200px}
+ .maptitle p:first-child{font-size: 30px;color: #333333;text-align: center;line-height: 30px;padding-top: 50px;font-family: 微软雅黑 Light;
+}
+ .maptitle p:last-child{width: 100px;height: 20px;border-bottom: 4px solid #17D3FF;margin: 0 auto 50px;}
+.map_left{float: left;width: 666px;}
+.map_right{float: left;margin-left: 18px;width: 514px;height: 480px;}
+.map_right .temp{width: 514px;height: 222px;background:url(../images/temp.png) no-repeat;}
+.map_right .humi{width: 514px;height: 222px;margin-top: 36px; background:url(../images/humi.png) no-repeat;}
+.map_right .temp .counter,.map_right .humi .counter{float: left;margin-left: 40px;margin-top: 15px;font-family: Microsoft YaHei;font-size: 90px;color: #fff;font-weight: 700;}
+.map_right .temp .danwei,.map_right .humi .danwei{float: left; margin-left: 6px;margin-top: 42px; font-family: 'Arial Narrow';font-size: 24px;color: #fff;}
+.anchorBL{display:none;}
+/*仪表盘*/
+/*#yibiaopan {background-color: #F5F5F5;padding-bottom: 40px;min-width: 1200px}
+#yibiaopan .yibiaopantitle p:first-child{font-size: 30px;color: #333333;text-align: center;line-height: 30px;padding-top: 40px;font-family: 微软雅黑 Light;
+}
+#yibiaopan .yibiaopantitle p:last-child{width: 100px;height: 30px;border-bottom: 4px solid #17D3FF;margin: 0 auto 20px;}
+#yibiaopan .board{margin-top: 30px}
+#yibiaopan .board .circles{overflow: hidden;}
+#yibiaopan .board .circles .left{float: left;width: 590px;height: 450px;border-radius: 10px; padding: 60px 156px;background-color: #fff;box-shadow: 2px 2px 2px 2px #f0f1f1; margin-right: 20px;}
+#yibiaopan .board .circles .right{float: left;width: 590px;height: 450px;border-radius: 10px;padding: 60px 156px;background-color: #fff;box-shadow: 2px 2px 2px 2px #f0f1f1;}
+#yibiaopan .board .circle{display: inline-block;transform:rotate(0deg);border-radius: 50%;overflow: hidden;height: 278px;}
+#yibiaopan .board .circles span{display: block;width: 278px;margin-top: 30px;text-align: center;line-height: 30px;font-family: 微软雅黑 Light;color: #333333; font-size: 26px; }*/
+
+
+/*数据标题*/
+.data_title{background-color: #F5F5F5;height: 160px;}
+/*数据采样图*/
+.Chars {background-color: #F5F5F5;padding-bottom: 40px;min-width: 1200px}
+.Chars .Mwidth{background-color: #fff;}
+.Chars .chartitle p:first-child{font-size: 30px;color: #333333;text-align: center;line-height: 30px;padding-top: 50px;font-family: 微软雅黑 Light;
+}
+.Chars .chartitle p:last-child{width: 100px;height: 20px;border-bottom: 4px solid #17D3FF;margin: 0 auto 50px;}
+.Chars .blank div{display: inline-block;color: #666666}
+.Chars .blank .charname{margin-left: 10px;margin-top: 20px;margin-bottom: 21px}
+.Chars .blank .charname img{float: left}
+.Chars .blank .charname .first_p{font-size: 20px;color: #333;line-height: 20px;text-indent: 7px;display: inline-block;margin-top: 6px;font-family: 微软雅黑}
+.Chars .blank .charname p:last-child{font-size: 14px;color: #333;font-family: Arial Narrow;line-height:14px;width: 150px;margin-left: 52px;margin-top: 2px;}
+
+.Chars .blank .kinds span{margin-left: 32px;cursor: pointer;font-family: 微软雅黑}
+.Chars .blank .kinds .select{border-radius: 4px;background: #17D3FF;padding: 3px 5px;color: #ffffff;}
+
+.Chars .blank .date{float: right;position:relative;height:40px;margin-right: 120px;margin-top: 34px;}
+.Chars .blank .date .datepicker{margin-right: 25px;height: 30px;width: 130px;}
+.Chars .blank  .date .line{display: inline-block;width: 15px;height: 30px;font-size: 20px;margin-left: -15px;}
+.Chars .blank .date .go{
+    border: none;
+    outline: none;
+    position: relative;
+    color: rgba(255, 255, 255, 1);
+    /* text-decoration: none; */
+    background-color: #00CFFF;
+    font-family: "Microsoft YaHei", 微软雅黑, 宋体;
+    font-weight: 700;
+    /* font-size: 3em; */
+    display: inline-block;
+    padding: 4px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 0px #009ED8;
+    top: -3px;
+    width: 50px;
+    text-align: center;
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    transition: all .1s ease;}
+.Chars .blank .date .go:active{
+box-shadow: 0px 3px 0px #009ED8, 0px 3px 6px rgba(0, 0, 0, .9);
+ position: relative;
+ top: 1px;
+}
+.Chars .Chars{padding-top: 20px}
+
+/*数据记录*/
+.grid {background-color: #F5F5F5;padding-bottom: 40px;min-width: 1200px}
+.grid .Mwidth{background-color: #fff;padding-bottom: 30px;}
+.grid .gridname{margin-left: 10px;margin-bottom:21px;padding-top: 20px;}
+.grid .gridname img{float: left}
+.grid .gridname .first_p{font-size: 20px;color: #333;line-height: 20px;text-indent: 7px;display: inline-block;margin-top: 6px;font-family: 微软雅黑}
+.grid .gridname p:last-child{font-size: 14px;color: #333;font-family: Arial Narrow;line-height: 14px;width: 150px;margin-left: 52px;margin-top: 2px;}
+.grid .panel{margin: 0 auto}
+
+.board canvas {
+            border: 1px solid #eee;
+            position: relative;
+            width: 278px;
+            height: 278px;
+/*
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+*/
+            background: -webkit-linear-gradient(top, #397CD5 0%, #00CEFF 100%);
+            background: -ms-linear-gradient(top, #397CD5 0%, #00CEFF 100%);
+            background: -moz-linear-gradient(top, #397CD5 0%, #00CEFF 100%);
+            background: linear-gradient(top, #397CD5 0%, #00CEFF 100%);
+        }
+
+/*底部*/
+.bottom{height: 70px;color: #ffffff;background: #333333;min-width: 1200px}
+.bottom p{font-size: 12px; line-height: 70px;text-align: center;margin: 0;font-family: 微软雅黑}
+
+
+

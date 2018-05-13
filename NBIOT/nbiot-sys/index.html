@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<title>NB-IoT</title>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">  
+
+    <link rel="stylesheet" type="text/css" href="./css/easyui.css">
+    <link rel="stylesheet" type="text/css" href="./css/datepicker.css">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/nb.css">
+    <link rel="stylesheet" type="text/css" href="./css/card-alerts.css">
+    <link rel="stylesheet" type="text/css" href="./css/nvabar.css">
+  
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+  
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <!-- Theme CSS -->
+    <link href="css/creative.min.css" rel="stylesheet">
+  
+    <script type="text/javascript" src="./js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="./js/highcharts.js"></script>
+    <script type="text/javascript" src="http://cdn.hcharts.cn/highcharts/highcharts-more.js"></script>
+    <script type="text/javascript" src="./js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="./js/slider.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/getscript?v=2.0&ak=7v9p7Ey6dkGiTMO4cAG9oFFBbxKEEzKd"></script>
+    <script type="text/javascript" src="./js/page.js"></script>
+    <script type="text/javascript" src="./js/jquery.countup.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.waypoints.js"></script>
+  
+    <script type="text/javascript" src="./js/nvabar.js"></script>
+  
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script> 
+
+</head>
+
+<body>
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">基于 NB-IoT 的车辆追踪报警系统</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">FEATURES</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#rt-map">MAP</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#rt-chart">CHART</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#record">RECORD</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">NB-IoT</h1>
+                <hr>
+                <p>基于蜂窝的窄带物联网（Narrow Band Internet of Things, NB-IoT）成为万物互联网络的一个重要分支。NB-IoT构建于蜂窝网络，只消耗大约180KHz的带宽，可直接部署于GSM网络、UMTS网络或LTE网络，以降低部署成本、实现平滑升级。</p>
+                <a href="./app-v2/index.html" class="btn btn-primary btn-xl page-scroll">查看APP端软件DEMO</a>
+            </div>
+        </div>
+    </header>
+  
+  
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">基于 NB-IoT 的车辆追踪报警系统</h2>
+                    <center><hr class="light"></center>
+                    <p class="text-faded">本产品是一种通过 GPS 或北斗卫星追踪车辆位置信息，并通过 NB-IoT 上报给控制中心的系统。
+                      					  定位节点采用电池供电，无线上报，无需改造车辆就可快速安装。用户安
+                                          装好定位节点后即可打开手机查看车辆位置信息。 
+                                          当用户发现车辆丢失时，可通过手机触发报警模式。进入报警模式，节点
+                                          将每分钟上报一次数据直到用户取消报警模式位置。 
+                                          同时，用户还可设置电子围栏功能。当车辆离开设防区域时，云端将通过
+                                          短信通知用户。 
+                  	</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">覆盖无盲区，管理全天候</h2>
+                    <center><hr class="primary"></center>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
+                        <h3>广覆盖</h3>
+                        <p class="text-muted">提供改进的室内覆盖，提升了现有网络100倍覆盖区域的能力。</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
+                        <h3>大容量</h3>
+                        <p class="text-muted">NB-IoT一个扇区能够支持10万个连接，多种网络架构。</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
+                        <h3>低成本</h3>
+                        <p class="text-muted">企业预期的单个接连模块不超过5美元。</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
+                        <h3>低功耗</h3>
+                        <p class="text-muted">NB-IoT终端模块的待机时间非常长，可达数年乃至更长时间</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+
+  
+
+      
+      
+    <section class="bg-light-gray" id="rt-map">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">实时GPS信息</h2>
+                    <center><hr class="primary"></center>
+                </div>
+            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div id="allmap" style="height:480px"></div>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <h4>当前状态：</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <!--
+                    <div class="notice notice-lg">
+                        <strong>用户：</strong> Admin
+                    </div>-->
+                    <div class="notice notice-success">
+                        <strong>设备ID：</strong> 4786e6ed00380057
+                    </div>
+                    <div class="notice notice-danger">
+                        <strong>状态：</strong> 正常
+                    </div>
+                    <div class="notice notice-info">
+                        <strong>位置：</strong> 浙江省杭州市滨江区滨安路650号
+                    </div>
+                    <div class="notice notice-warning">
+                        <strong>距离：</strong> ###
+                    </div>
+                    <div class="notice notice">
+                        <strong>时间：</strong> Oct 30 2017 00:02:19
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>   
+ 
+    <section class="rt-chart" id="rt-chart">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">节点状态监控</h2>
+                    <center><hr class="primary"></center>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="Mwidth">
+                <div class="Chars">
+                    <div class="Mwidth">
+                        <div class="blank">
+                            <div class="charname">
+                                <img src="images/grid.png">
+                                <p class="first_p">状态监控</p>
+                                <p>Data records</p>
+                            </div>
+                            <div class="date">
+                                <span>日期：</span>
+                                <input class="datepicker" id="datepicker1" data-date-format="mm/dd/yyyy" value="04/01/2017">
+                                <span class="line">-</span>
+                                <input class="datepicker" id="datepicker2" data-date-format="mm/dd/yyyy" value="04/19/2017">
+                                <input class="go" id="go" type="button" value="GO">
+                            </div>
+                        </div>
+                        <div class="char" id="container"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+    <section class="bg-light-gray" id="record">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">数据记录</h2>
+                    <center><hr class="primary"></center>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="grid">
+                <div class="Mwidth">
+                    <div class="gridname">
+                        <img src="images/grid.png">
+                        <p class="first_p">数据记录</p>
+                        <p>Data records</p>
+                    </div>
+                    <table id="container1" style="width:1180px;height:327px;margin-left:10px;" data-options="showHeader:true,singleSelect:true,collapsible:true"></table>
+                </div>
+            </div>
+        </div>
+    </section>
+          
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+				<p>Copyright © 杭州电子科技大学</p>
+            </div>
+        </div>
+    </aside>
+       
+
+    <!-- 模态框（Modal） -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <!-- /.modal-content -->
+            <div class="modal-content">
+                <!-- /.modal -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                接受安全证书
+            </h4>
+                </div>
+                <div class="modal-body">
+                    <p>第一次连接，请根据浏览器提示，接受安全证书</p>
+                    <p>
+                        <a target="_self" id="certificate_url">
+                            <button>接受安全证书</button>
+                        </a>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

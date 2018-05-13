@@ -1,0 +1,86 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.15
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: flayfly Microsoft, Microsoft, LIC=65ILQ-NBGR5-UG07Q-NA7YK-DKADD-T8BKU
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.15.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 2 (build 169)
+Assembler:       Armasm.exe V5.05 update 2 (build 169)
+Linker/Locator:  ArmLink.exe V5.05 update 2 (build 169)
+Library Manager: ArmAr.exe V5.05 update 2 (build 169)
+Hex Converter:   FromElf.exe V5.05 update 2 (build 169)
+CPU DLL:         SARMCM3.DLL V5.15.0
+Dialog DLL:      DARMCM1.DLL V1.12.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.15.0
+Dialog DLL:      TARMCM1.DLL V1.9.0.0
+ 
+<h2>Project:</h2>
+E:\工程项目\NB-IoT实训平台\NB-IoT_training_platform\NB-IoT\keil\nb-node\nb-node.uvprojx
+Project File Date:  10/24/2017
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.05 update 2 (build 169)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'nb-node'
+compiling main.c...
+compiling board.c...
+compiling softuart.c...
+compiling gpio-board.c...
+compiling i2c-board.c...
+compiling gps-board.c...
+compiling uart-board.c...
+compiling iwdog.c...
+compiling tim-board.c...
+compiling sysIrqHandlers.c...
+compiling utilities.c...
+compiling printf.c...
+compiling delay.c...
+compiling gpio.c...
+compiling gps.c...
+compiling i2c.c...
+compiling uart.c...
+compiling SHT2x.c...
+compiling neul_bc95.c...
+..\..\src\system\neul_bc95.c(106): warning:  #177-D: function "neul_bc95_set_cdp_info" was declared but never referenced
+  static int neul_bc95_set_cdp_info(const char *cdp)
+..\..\src\system\neul_bc95.c: 1 warning, 0 errors
+compiling timer.c...
+linking...
+Program Size: Code=28060 RO-data=432 RW-data=196 ZI-data=4164  
+".\Objects\uplink.axf" - 0 Error(s), 1 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.3.0.pack
+                ARM::CMSIS:CORE:4.1.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.1.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32L0xx_DFP.1.6.0.pack
+                Keil::Device:Startup:1.6.0
+                STMicroelectronics STM32L0 Series Device Support and Examples
+   * Component: Startup Version: 1.6.0
+
+<h2>Collection of Component include folders:</h2>
+  E:\工程项目\NB-IoT实训平台\NB-IoT_training_platform\NB-IoT\keil\nb-node\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32L0xx_DFP\1.6.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.1.0
+
+   * Component: Keil::Device:Startup:1.6.0
+      Source file:   Device\Source\ARM\startup_stm32l052xx.s
+      Source file:   Device\Source\system_stm32l0xx.c
+      Source file:   Device\Source\ARM\STM32L0xx_OPT.s
+</pre>
+</body>
+</html>

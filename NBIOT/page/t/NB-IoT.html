@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://115.159.219.199:3000/nbiot-sys/#services -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>NB-IoT</title>
+
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" type="text/css" href="./NB-IoT_files/easyui.css">
+    <link rel="stylesheet" type="text/css" href="./NB-IoT_files/datepicker.css">
+    <link rel="stylesheet" type="text/css" href="./NB-IoT_files/reset.css">
+    <link rel="stylesheet" type="text/css" href="./NB-IoT_files/nb.css">
+    <link rel="stylesheet" type="text/css" href="./NB-IoT_files/card-alerts.css">
+    <link rel="stylesheet" type="text/css" href="./NB-IoT_files/nvabar.css">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="./NB-IoT_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="./NB-IoT_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="./NB-IoT_files/css" rel="stylesheet" type="text/css">
+    <link href="./NB-IoT_files/css(1)" rel="stylesheet" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link href="./NB-IoT_files/magnific-popup.css" rel="stylesheet">
+    <!-- Theme CSS -->
+    <link href="./NB-IoT_files/creative.min.css" rel="stylesheet">
+
+    <script type="text/javascript" src="./NB-IoT_files/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="./NB-IoT_files/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="./NB-IoT_files/highcharts.js"></script>
+    <script type="text/javascript" src="./NB-IoT_files/highcharts-more.js"></script>
+    <script type="text/javascript" src="./NB-IoT_files/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="./NB-IoT_files/slider.js"></script>
+    <script type="text/javascript" src="./NB-IoT_files/getscript"></script>
+    <script type="text/javascript" src="./NB-IoT_files/page.js"></script>
+    <script type="text/javascript" src="./NB-IoT_files/jquery.countup.min.js"></script>
+    <script type="text/javascript" src="./NB-IoT_files/jquery.waypoints.js"></script>
+
+    <script type="text/javascript" src="./NB-IoT_files/nvabar.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="./NB-IoT_files/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="./NB-IoT_files/jquery.easing.min.js"></script>
+    <script src="./NB-IoT_files/scrollreveal.min.js"></script>
+    <script src="./NB-IoT_files/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="./NB-IoT_files/creative.min.js"></script>
+
+</head>
+
+<body>
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="http://115.159.219.199:3000/nbiot-sys/#page-top">基于 NB-IoT 的车辆追踪报警系统</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="http://115.159.219.199:3000/nbiot-sys/#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="http://115.159.219.199:3000/nbiot-sys/#services">FEATURES</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="http://115.159.219.199:3000/nbiot-sys/#rt-map">MAP</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="http://115.159.219.199:3000/nbiot-sys/#rt-chart">CHART</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="http://115.159.219.199:3000/nbiot-sys/#record">RECORD</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">NB-IoT</h1>
+                <hr>
+                <p>基于蜂窝的窄带物联网（Narrow Band Internet of Things, NB-IoT）成为万物互联网络的一个重要分支。NB-IoT构建于蜂窝网络，只消耗大约180KHz的带宽，可直接部署于GSM网络、UMTS网络或LTE网络，以降低部署成本、实现平滑升级。</p>
+                <a href="http://115.159.219.199:3000/nbiot-sys/app-v2/index.html" class="btn btn-primary btn-xl page-scroll">查看APP端软件DEMO</a>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">基于 NB-IoT 的车辆追踪报警系统</h2>
+                    <center>
+                        <hr class="light">
+                    </center>
+                    <p class="text-faded">本产品是一种通过 GPS 或北斗卫星追踪车辆位置信息，并通过 NB-IoT 上报给控制中心的系统。 定位节点采用电池供电，无线上报，无需改造车辆就可快速安装。用户安 装好定位节点后即可打开手机查看车辆位置信息。
+                        当用户发现车辆丢失时，可通过手机触发报警模式。进入报警模式，节点 将每分钟上报一次数据直到用户取消报警模式位置。 同时，用户还可设置电子围栏功能。当车辆离开设防区域时，云端将通过 短信通知用户。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">覆盖无盲区，管理全天候</h2>
+                    <center>
+                        <hr class="primary">
+                    </center>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
+                        <h3>广覆盖</h3>
+                        <p class="text-muted">提供改进的室内覆盖，提升了现有网络100倍覆盖区域的能力。</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
+                        <h3>大容量</h3>
+                        <p class="text-muted">NB-IoT一个扇区能够支持10万个连接，多种网络架构。</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
+                        <h3>低成本</h3>
+                        <p class="text-muted">企业预期的单个接连模块不超过5美元。</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
+                        <h3>低功耗</h3>
+                        <p class="text-muted">NB-IoT终端模块的待机时间非常长，可达数年乃至更长时间</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="bg-light-gray" id="rt-map">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">实时GPS信息</h2>
+                    <center>
+                        <hr class="primary">
+                    </center>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div id="allmap" style="height: 480px; overflow: hidden; position: relative; z-index: 0; background-color: rgb(243, 241, 236); color: rgb(0, 0, 0); text-align: left;">
+                            <div style="overflow: visible; position: absolute; z-index: 0; left: 0px; top: 0px; cursor: url(&quot;http://api0.map.bdimg.com/images/openhand.cur&quot;) 8 8, default;">
+                                <div class="BMap_mask" style="position: absolute; left: 0px; top: 0px; z-index: 9; overflow: hidden; user-select: none; width: 617px; height: 480px;"></div>
+                                <div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 200;">
+                                    <div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 800;"></div>
+                                    <div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 700;"></div>
+                                    <div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 600;"></div>
+                                    <div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 500;">
+                                        <label class="BMapLabel" unselectable="on" style="position: absolute; display: none; cursor: inherit; background-color: rgb(190, 190, 190); border: 1px solid rgb(190, 190, 190); padding: 1px; white-space: nowrap; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: arial, sans-serif; z-index: -20000; color: rgb(190, 190, 190);">shadow</label>
+                                    </div>
+                                    <div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 400;"></div>
+                                    <div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 300;"></div>
+                                    <div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 201;"></div>
+                                    <div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 200;"></div>
+                                </div>
+                                <div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 1;"></div>
+                                <div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 2;"></div>
+                                <div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 3;"></div>
+                            </div>
+                            <div class="pano_close" title="退出全景" style="z-index: 1201; display: none;"></div>
+                            <a class="pano_pc_indoor_exit" title="退出室内景" style="z-index: 1201; display: none;">
+                                <span style="float:right;margin-right:12px;">出口</span>
+                            </a>
+                            <div id="zoomer" style="position:absolute;z-index:0;top:0px;left:0px;overflow:hidden;visibility:hidden;cursor:url(http://api0.map.bdimg.com/images/openhand.cur) 8 8,default">
+                                <div class="BMap_zoomer" style="top:0;left:0;"></div>
+                                <div class="BMap_zoomer" style="top:0;right:0;"></div>
+                                <div class="BMap_zoomer" style="bottom:0;left:0;"></div>
+                                <div class="BMap_zoomer" style="bottom:0;right:0;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h4>当前状态：</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <!--
+                    <div class="notice notice-lg">
+                        <strong>用户：</strong> Admin
+                    </div>-->
+                                        <div class="notice notice-success">
+                                            <strong>设备ID：</strong> 4786e6ed00380057
+                                        </div>
+                                        <div class="notice notice-danger">
+                                            <strong>状态：</strong> 正常
+                                        </div>
+                                        <div class="notice notice-info">
+                                            <strong>位置：</strong> 浙江省杭州市滨江区滨安路650号
+                                        </div>
+                                        <div class="notice notice-warning">
+                                            <strong>距离：</strong> ###
+                                        </div>
+                                        <div class="notice notice">
+                                            <strong>时间：</strong> Oct 30 2017 00:02:19
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="rt-chart" id="rt-chart">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">节点状态监控</h2>
+                    <center>
+                        <hr class="primary">
+                    </center>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="Mwidth">
+                <div class="Chars">
+                    <div class="Mwidth">
+                        <div class="blank">
+                            <div class="charname">
+                                <img src="./NB-IoT_files/grid.png">
+                                <p class="first_p">状态监控</p>
+                                <p>Data records</p>
+                            </div>
+                            <div class="date">
+                                <span>日期：</span>
+                                <input class="datepicker" id="datepicker1" data-date-format="mm/dd/yyyy" value="04/01/2017">
+                                <span class="line">-</span>
+                                <input class="datepicker" id="datepicker2" data-date-format="mm/dd/yyyy" value="04/19/2017">
+                                <input class="go" id="go" type="button" value="GO">
+                            </div>
+                        </div>
+                        <div class="char" id="container" data-highcharts-chart="0">
+                            <div id="highcharts-0" class="highcharts-container " style="position: relative; overflow: hidden; width: 1200px; height: 400px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                                <svg version="1.1" class="highcharts-root" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;"
+                                    xmlns="http://www.w3.org/2000/svg" width="1200" viewBox="0 0 1200 400" height="400">
+                                    <desc>Created with Highcharts 5.0.0</desc>
+                                    <defs>
+                                        <clippath id="highcharts-1">
+                                            <rect x="0" y="0" width="1086" height="337" fill="none"></rect>
+                                        </clippath>
+                                    </defs>
+                                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1200" height="400"
+                                        rx="0" ry="0"></rect>
+                                    <rect fill="none" class="highcharts-plot-background" x="57" y="10" width="1086"
+                                        height="337"></rect>
+                                    <g class="highcharts-plot-lines-0">
+                                        <path fill="none" class="highcharts-plot-line "></path>
+                                    </g>
+                                    <g class="highcharts-plot-lines-0">
+                                        <path fill="none" class="highcharts-plot-line "></path>
+                                    </g>
+                                    <g class="highcharts-grid highcharts-xaxis-grid "></g>
+                                    <g class="highcharts-grid highcharts-yaxis-grid ">
+                                        <path fill="none" class="highcharts-grid-line" d="M 0 0" opacity="1"></path>
+                                    </g>
+                                    <g class="highcharts-grid highcharts-yaxis-grid ">
+                                        <path fill="none" class="highcharts-grid-line" d="M 0 0" opacity="1"></path>
+                                    </g>
+                                    <rect fill="none" class="highcharts-plot-border" x="57" y="10" width="1086" height="337"></rect>
+                                    <g class="highcharts-axis highcharts-xaxis ">
+                                        <path fill="none" class="highcharts-axis-line" stroke="#ccd6eb" stroke-width="1" d="M 57 347.5 L 1143 347.5"></path>
+                                    </g>
+                                    <g class="highcharts-axis highcharts-yaxis ">
+                                        <text x="24" text-anchor="end" transform="translate(0,0) rotate(270 24 10)" class="highcharts-axis-title"
+                                            style="color:#666666;fill:#666666;" y="10">移动情况/Speed</text>
+                                        <path fill="none" class="highcharts-axis-line" stroke="#8FC41E"
+                                            stroke-width="1" d="M 56.5 10 L 56.5 347"></path>
+                                    </g>
+                                    <g class="highcharts-axis highcharts-yaxis ">
+                                        <text x="1176" text-anchor="start" transform="translate(0,0) rotate(90 1176 10)" class="highcharts-axis-title"
+                                            style="color:#666666;fill:#666666;" y="10">距离/M</text>
+                                        <path fill="none" class="highcharts-axis-line" stroke="#14B5B0" stroke-width="1"
+                                            d="M 1143.5 10 L 1143.5 347"></path>
+                                    </g>
+                                    <g class="highcharts-series-group ">
+                                        <g class="highcharts-series highcharts-series-0 highcharts-line-series highcharts-color-undefined "
+                                            transform="translate(57,10) scale(1 1)" clip-path="url(#highcharts-1)" width="337"
+                                            height="1086"></g>
+                                        <g class="highcharts-markers highcharts-series-0 highcharts-line-series highcharts-color-undefined "
+                                            transform="translate(57,10) scale(1 1)" clip-path="url(#highcharts-2)" width="337"
+                                            height="1086"></g>
+                                        <g class="highcharts-series highcharts-series-1 highcharts-line-series highcharts-color-undefined "
+                                            transform="translate(57,10) scale(1 1)" clip-path="url(#highcharts-1)" width="337"
+                                            height="1086"></g>
+                                        <g class="highcharts-markers highcharts-series-1 highcharts-line-series highcharts-color-undefined "
+                                            transform="translate(57,10) scale(1 1)" clip-path="url(#highcharts-4)" width="337"
+                                            height="1086"></g>
+                                    </g>
+                                    <g class="highcharts-legend" transform="translate(495,359)">
+                                        <rect fill="none" class="highcharts-legend-box" rx="0" ry="0" stroke="#999999" stroke-width="0"
+                                            x="0" y="0" width="209" height="26" visibility="visible"></rect>
+                                        <g>
+                                            <g>
+                                                <g class="highcharts-legend-item highcharts-line-series highcharts-color-undefined highcharts-series-0"
+                                                    transform="translate(8,3)">
+                                                    <path fill="none" d="M 0 11 L 16 11" class="highcharts-graph" stroke="#8FC41E"
+                                                        stroke-width="1"></path>
+                                                    <path fill="#8FC41E" d="M 8 7 C 13.328 7 13.328 15 8 15 C 2.6719999999999997 15 2.6719999999999997 7 8 7 Z"
+                                                        class="highcharts-point"></path>
+                                                    <text x="21" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;"
+                                                        text-anchor="start" y="15">移动速度/Speed.</text>
+                                                </g>
+                                                <g class="highcharts-legend-item highcharts-line-series highcharts-color-undefined highcharts-series-1"
+                                                    transform="translate(141.34375,3)">
+                                                    <path fill="none" d="M 0 11 L 16 11" class="highcharts-graph" stroke="#14B5B0"
+                                                        stroke-width="1"></path>
+                                                    <path fill="#14B5B0" d="M 8 7 L 12 11 8 15 4 11 Z" class="highcharts-point"></path>
+                                                    <text x="21" y="15" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;"
+                                                        text-anchor="start">距离/M</text>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <g class="highcharts-axis-labels highcharts-xaxis-labels "></g>
+                                    <g class="highcharts-axis-labels highcharts-yaxis-labels ">
+                                        <text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;width:386px;text-overflow:clip;"
+                                            text-anchor="end" transform="translate(0,0)" y="-9999">
+                                            <tspan>0</tspan>
+                                        </text>
+                                    </g>
+                                    <g class="highcharts-axis-labels highcharts-yaxis-labels ">
+                                        <text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;width:386px;text-overflow:clip;"
+                                            text-anchor="start" transform="translate(0,0)" y="-9999">
+                                            <tspan>0</tspan>
+                                        </text>
+                                    </g>
+                                    <g class="highcharts-label highcharts-tooltip" display="none" style="cursor:default;pointer-events:none;white-space:nowrap;"
+                                        transform="translate(0,0)">
+                                        <path fill="none" class="highcharts-label-box highcharts-tooltip-box" d="M 3.5 0.5 L 13.5 0.5 C 16.5 0.5 16.5 0.5 16.5 3.5 L 16.5 13.5 C 16.5 16.5 16.5 16.5 13.5 16.5 L 3.5 16.5 C 0.5 16.5 0.5 16.5 0.5 13.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5"
+                                            isShadow="true" stroke="#000000" stroke-opacity="0.049999999999999996" stroke-width="5"
+                                            transform="translate(1, 1)"></path>
+                                        <path fill="none" class="highcharts-label-box highcharts-tooltip-box" d="M 3.5 0.5 L 13.5 0.5 C 16.5 0.5 16.5 0.5 16.5 3.5 L 16.5 13.5 C 16.5 16.5 16.5 16.5 13.5 16.5 L 3.5 16.5 C 0.5 16.5 0.5 16.5 0.5 13.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5"
+                                            isShadow="true" stroke="#000000" stroke-opacity="0.09999999999999999" stroke-width="3"
+                                            transform="translate(1, 1)"></path>
+                                        <path fill="none" class="highcharts-label-box highcharts-tooltip-box" d="M 3.5 0.5 L 13.5 0.5 C 16.5 0.5 16.5 0.5 16.5 3.5 L 16.5 13.5 C 16.5 16.5 16.5 16.5 13.5 16.5 L 3.5 16.5 C 0.5 16.5 0.5 16.5 0.5 13.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5"
+                                            isShadow="true" stroke="#000000" stroke-opacity="0.15" stroke-width="1" transform="translate(1, 1)"></path>
+                                        <path fill="rgba(247,247,247,0.85)" class="highcharts-label-box highcharts-tooltip-box"
+                                            d="M 3.5 0.5 L 13.5 0.5 C 16.5 0.5 16.5 0.5 16.5 3.5 L 16.5 13.5 C 16.5 16.5 16.5 16.5 13.5 16.5 L 3.5 16.5 C 0.5 16.5 0.5 16.5 0.5 13.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5"></path>
+                                    </g>
+                                </svg>
+                                <div class="highcharts-label highcharts-tooltip" style="position: absolute; left: 0px; top: 0px; display: none; opacity: 1; pointer-events: none;">
+                                    <span style="font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif; font-size: 12px; position: absolute; white-space: nowrap; color: rgb(51, 51, 51); margin-left: 0px; margin-top: 0px; left: 8px; top: 8px;"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-gray" id="record">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">数据记录</h2>
+                    <center>
+                        <hr class="primary">
+                    </center>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="grid">
+                <div class="Mwidth">
+                    <div class="gridname">
+                        <img src="./NB-IoT_files/grid.png">
+                        <p class="first_p">数据记录</p>
+                        <p>Data records</p>
+                    </div>
+                    <div class="panel datagrid" style="width: 1180px;">
+                        <div class="datagrid-wrap panel-body panel-body-noheader" title="" style="width: 1178px; height: 325px;">
+                            <div class="datagrid-view" style="width: 1146px; height: 293px;">
+                                <div class="datagrid-view1" style="width: 0px;">
+                                    <div class="datagrid-header" style="width: 0px; height: 25px;">
+                                        <div class="datagrid-header-inner" style="display: block;">
+                                            <table class="datagrid-htable" border="0" cellspacing="0" cellpadding="0" style="height: 25px;">
+                                                <tbody></tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="datagrid-body" style="width: 0px; margin-top: 0px; height: 268px;">
+                                        <div class="datagrid-body-inner"></div>
+                                    </div>
+                                    <div class="datagrid-footer" style="width: 0px;">
+                                        <div class="datagrid-footer-inner" style="display: none;"></div>
+                                    </div>
+                                </div>
+                                <div class="datagrid-view2" style="width: 1146px;">
+                                    <div class="datagrid-header" style="width: 1146px; height: 25px;">
+                                        <div class="datagrid-header-inner" style="display: block;">
+                                            <table class="datagrid-htable" border="0" cellspacing="0" cellpadding="0" style="height: 25px;">
+                                                <tbody>
+                                                    <tr class="datagrid-header-row">
+                                                        <td field="nodeID">
+                                                            <div class="datagrid-cell datagrid-cell-c1-nodeID" style="text-align: center;">
+                                                                <span>设备编号</span>
+                                                                <span class="datagrid-sort-icon"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td field="Lat">
+                                                            <div class="datagrid-cell datagrid-cell-c1-Lat" style="text-align: center;">
+                                                                <span>纬度</span>
+                                                                <span class="datagrid-sort-icon"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td field="Long" class="">
+                                                            <div class="datagrid-cell datagrid-cell-c1-Long" style="text-align: center;">
+                                                                <span>经度</span>
+                                                                <span class="datagrid-sort-icon"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td field="Att">
+                                                            <div class="datagrid-cell datagrid-cell-c1-Att" style="text-align: center;">
+                                                                <span>海拔</span>
+                                                                <span class="datagrid-sort-icon"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td field="sTime">
+                                                            <div class="datagrid-cell datagrid-cell-c1-sTime" style="text-align: center;">
+                                                                <span>记录时间</span>
+                                                                <span class="datagrid-sort-icon"></span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="datagrid-body" style="width: 1146px; margin-top: 0px; height: 268px; overflow-x: hidden;">
+                                        <table class="datagrid-btable" cellspacing="0" cellpadding="0" border="0">
+                                            <tbody>
+                                                <tr id="datagrid-row-r1-2-0" class="" style="height: 1px; border-color: transparent; background: transparent;">
+                                                    <td field="nodeID" style="height: 1px; border-color: transparent; background: transparent;">
+                                                        <div style="text-align: center; height: 1px; border-color: transparent; background: transparent;"
+                                                            class="datagrid-cell datagrid-cell-c1-nodeID"></div>
+                                                    </td>
+                                                    <td field="Lat" style="height: 1px; border-color: transparent; background: transparent;">
+                                                        <div style="height: 1px; border-color: transparent; background: transparent;"
+                                                            class="datagrid-cell datagrid-cell-c1-Lat"></div>
+                                                    </td>
+                                                    <td field="Long" style="height: 1px; border-color: transparent; background: transparent;">
+                                                        <div style="height: 1px; border-color: transparent; background: transparent;"
+                                                            class="datagrid-cell datagrid-cell-c1-Long"></div>
+                                                    </td>
+                                                    <td field="Att" style="height: 1px; border-color: transparent; background: transparent;">
+                                                        <div style="height: 1px; border-color: transparent; background: transparent;"
+                                                            class="datagrid-cell datagrid-cell-c1-Att"></div>
+                                                    </td>
+                                                    <td field="sTime" style="height: 1px; border-color: transparent; background: transparent;">
+                                                        <div style="height: 1px; border-color: transparent; background: transparent;"
+                                                            class="datagrid-cell datagrid-cell-c1-sTime"></div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="datagrid-footer" style="width: 1146px;">
+                                        <div class="datagrid-footer-inner" style="display: none;"></div>
+                                    </div>
+                                </div>
+                                <table id="container1" style="margin-left: 10px; display: none;" data-options="showHeader:true,singleSelect:true,collapsible:true"
+                                    class="datagrid-f"></table>
+                                <style type="text/css" easyui="true">
+                                    .datagrid-header-rownumber {
+                                        width: 29px
+                                    }
+
+                                    .datagrid-cell-rownumber {
+                                        width: 29px
+                                    }
+
+                                    .datagrid-cell-c1-nodeID {
+                                        width: 228px
+                                    }
+
+                                    .datagrid-cell-c1-Lat {
+                                        width: 228px
+                                    }
+
+                                    .datagrid-cell-c1-Long {
+                                        width: 228px
+                                    }
+
+                                    .datagrid-cell-c1-Att {
+                                        width: 228px
+                                    }
+
+                                    .datagrid-cell-c1-sTime {
+                                        width: 228px
+                                    }
+                                </style>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <p>Copyright © 杭州电子科技大学</p>
+            </div>
+        </div>
+    </aside>
+
+
+    <!-- 模态框（Modal） -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <!-- /.modal-content -->
+            <div class="modal-content">
+                <!-- /.modal -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        ×
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        接受安全证书
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <p>第一次连接，请根据浏览器提示，接受安全证书</p>
+                    <p>
+                        <a target="_self" id="certificate_url">
+                            <button>接受安全证书</button>
+                        </a>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="datepicker dropdown-menu">
+        <div class="datepicker-days" style="display: block;">
+            <table class=" table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev">‹</th>
+                        <th colspan="5" class="switch">May 2018</th>
+                        <th class="next">›</th>
+                    </tr>
+                    <tr>
+                        <th class="dow">Su</th>
+                        <th class="dow">Mo</th>
+                        <th class="dow">Tu</th>
+                        <th class="dow">We</th>
+                        <th class="dow">Th</th>
+                        <th class="dow">Fr</th>
+                        <th class="dow">Sa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="day  old">29</td>
+                        <td class="day  old">30</td>
+                        <td class="day ">1</td>
+                        <td class="day ">2</td>
+                        <td class="day ">3</td>
+                        <td class="day ">4</td>
+                        <td class="day ">5</td>
+                    </tr>
+                    <tr>
+                        <td class="day ">6</td>
+                        <td class="day ">7</td>
+                        <td class="day ">8</td>
+                        <td class="day  active">9</td>
+                        <td class="day ">10</td>
+                        <td class="day ">11</td>
+                        <td class="day ">12</td>
+                    </tr>
+                    <tr>
+                        <td class="day ">13</td>
+                        <td class="day ">14</td>
+                        <td class="day ">15</td>
+                        <td class="day ">16</td>
+                        <td class="day ">17</td>
+                        <td class="day ">18</td>
+                        <td class="day ">19</td>
+                    </tr>
+                    <tr>
+                        <td class="day ">20</td>
+                        <td class="day ">21</td>
+                        <td class="day ">22</td>
+                        <td class="day ">23</td>
+                        <td class="day ">24</td>
+                        <td class="day ">25</td>
+                        <td class="day ">26</td>
+                    </tr>
+                    <tr>
+                        <td class="day ">27</td>
+                        <td class="day ">28</td>
+                        <td class="day ">29</td>
+                        <td class="day ">30</td>
+                        <td class="day ">31</td>
+                        <td class="day  new">1</td>
+                        <td class="day  new">2</td>
+                    </tr>
+                    <tr>
+                        <td class="day  new">3</td>
+                        <td class="day  new">4</td>
+                        <td class="day  new">5</td>
+                        <td class="day  new">6</td>
+                        <td class="day  new">7</td>
+                        <td class="day  new">8</td>
+                        <td class="day  new">9</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="datepicker-months" style="display: none;">
+            <table class="table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev">‹</th>
+                        <th colspan="5" class="switch">2018</th>
+                        <th class="next">›</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7">
+                            <span class="month">Jan</span>
+                            <span class="month">Feb</span>
+                            <span class="month">Mar</span>
+                            <span class="month">Apr</span>
+                            <span class="month active">May</span>
+                            <span class="month">Jun</span>
+                            <span class="month">Jul</span>
+                            <span class="month">Aug</span>
+                            <span class="month">Sep</span>
+                            <span class="month">Oct</span>
+                            <span class="month">Nov</span>
+                            <span class="month">Dec</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="datepicker-years" style="display: none;">
+            <table class="table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev">‹</th>
+                        <th colspan="5" class="switch">2010-2019</th>
+                        <th class="next">›</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7">
+                            <span class="year old">2009</span>
+                            <span class="year">2010</span>
+                            <span class="year">2011</span>
+                            <span class="year">2012</span>
+                            <span class="year">2013</span>
+                            <span class="year">2014</span>
+                            <span class="year">2015</span>
+                            <span class="year">2016</span>
+                            <span class="year">2017</span>
+                            <span class="year active">2018</span>
+                            <span class="year">2019</span>
+                            <span class="year old">2020</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="datepicker dropdown-menu">
+        <div class="datepicker-days" style="display: block;">
+            <table class=" table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev">‹</th>
+                        <th colspan="5" class="switch">May 2018</th>
+                        <th class="next">›</th>
+                    </tr>
+                    <tr>
+                        <th class="dow">Su</th>
+                        <th class="dow">Mo</th>
+                        <th class="dow">Tu</th>
+                        <th class="dow">We</th>
+                        <th class="dow">Th</th>
+                        <th class="dow">Fr</th>
+                        <th class="dow">Sa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="day  old">29</td>
+                        <td class="day  old">30</td>
+                        <td class="day ">1</td>
+                        <td class="day ">2</td>
+                        <td class="day ">3</td>
+                        <td class="day ">4</td>
+                        <td class="day ">5</td>
+                    </tr>
+                    <tr>
+                        <td class="day ">6</td>
+                        <td class="day ">7</td>
+                        <td class="day ">8</td>
+                        <td class="day  active">9</td>
+                        <td class="day ">10</td>
+                        <td class="day ">11</td>
+                        <td class="day ">12</td>
+                    </tr>
+                    <tr>
+                        <td class="day ">13</td>
+                        <td class="day ">14</td>
+                        <td class="day ">15</td>
+                        <td class="day ">16</td>
+                        <td class="day ">17</td>
+                        <td class="day ">18</td>
+                        <td class="day ">19</td>
+                    </tr>
+                    <tr>
+                        <td class="day ">20</td>
+                        <td class="day ">21</td>
+                        <td class="day ">22</td>
+                        <td class="day ">23</td>
+                        <td class="day ">24</td>
+                        <td class="day ">25</td>
+                        <td class="day ">26</td>
+                    </tr>
+                    <tr>
+                        <td class="day ">27</td>
+                        <td class="day ">28</td>
+                        <td class="day ">29</td>
+                        <td class="day ">30</td>
+                        <td class="day ">31</td>
+                        <td class="day  new">1</td>
+                        <td class="day  new">2</td>
+                    </tr>
+                    <tr>
+                        <td class="day  new">3</td>
+                        <td class="day  new">4</td>
+                        <td class="day  new">5</td>
+                        <td class="day  new">6</td>
+                        <td class="day  new">7</td>
+                        <td class="day  new">8</td>
+                        <td class="day  new">9</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="datepicker-months" style="display: none;">
+            <table class="table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev">‹</th>
+                        <th colspan="5" class="switch">2018</th>
+                        <th class="next">›</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7">
+                            <span class="month">Jan</span>
+                            <span class="month">Feb</span>
+                            <span class="month">Mar</span>
+                            <span class="month">Apr</span>
+                            <span class="month active">May</span>
+                            <span class="month">Jun</span>
+                            <span class="month">Jul</span>
+                            <span class="month">Aug</span>
+                            <span class="month">Sep</span>
+                            <span class="month">Oct</span>
+                            <span class="month">Nov</span>
+                            <span class="month">Dec</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="datepicker-years" style="display: none;">
+            <table class="table-condensed">
+                <thead>
+                    <tr>
+                        <th class="prev">‹</th>
+                        <th colspan="5" class="switch">2010-2019</th>
+                        <th class="next">›</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7">
+                            <span class="year old">2009</span>
+                            <span class="year">2010</span>
+                            <span class="year">2011</span>
+                            <span class="year">2012</span>
+                            <span class="year">2013</span>
+                            <span class="year">2014</span>
+                            <span class="year">2015</span>
+                            <span class="year">2016</span>
+                            <span class="year">2017</span>
+                            <span class="year active">2018</span>
+                            <span class="year">2019</span>
+                            <span class="year old">2020</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
